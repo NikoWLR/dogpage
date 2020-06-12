@@ -1,2 +1,2 @@
-# Startpage
-Simple custom startpage for personal use.
+# Evening-Startpage
+A comfy startpage
