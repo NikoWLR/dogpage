@@ -2,14 +2,19 @@ body {
 background-color: darkslategrey;
 }
 
-#search {
+input {
+    padding: 0 1em;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     background-color: cadetblue;
-    width: 420px;
-    height: 25px;
+    width: 520px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 25px;
 }
+
+
 
 /* classes go here */
 
@@ -18,8 +23,16 @@ background-color: darkslategrey;
     justify-content: center;
     align-items: center;
     background-color: blueviolet;
-    margin-top: 450px;
+    margin-top: 150px;
     flex-wrap: wrap-reverse;
+}
+
+.searchcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    margin-top: 20%;
 }
 
 .center {
@@ -35,3 +48,5 @@ background-color: darkslategrey;
     height: 250px;
     width: 250px;
 }
+
+
