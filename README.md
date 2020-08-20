@@ -1,2 +1,2 @@
-# startpage
-Simple custom startpage for personal use.
+## <p align="center">Preview</p>
+![screenshot](startpage.png)
