@@ -19,6 +19,15 @@ input {
     color: beige;
 }
 
+img {
+
+width: 250px;
+height: 250px;
+
+}
+
+
+
 .center:hover {
     background-color: #566f9e;
     transition: 0.3s;
@@ -27,11 +36,14 @@ input {
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
     /*background-color: blueviolet;*/
     margin-top: 130px;
     flex-wrap: wrap-reverse;
+    /*width: 70vw;*/
+    margin-left: 13vw;
+    margin-right: 13vw;
     
 }
 
@@ -40,24 +52,53 @@ input {
     justify-content: center;
     align-items: center;
     /*background-color: blueviolet;*/
-    margin-top: 20%;
+    margin-top: 3%;
 }
 
 .imagecontainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
-    margin-top: 20%;
+    /*background-color: blue;*/
+    margin-top: 10%;
 }
 
-.center {
+#imagediv {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    height: 250px;
+    width: 250px;
+    background-image: url("firefox.png");
+}
+
+#dogcontainer {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+
+
+#imagediv.active {
+    background-image:none;
+    background-color: green;
+  }
+
+
+.center {
+    display: inline-flex;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-basis: 300px;
     margin:auto;
-    min-height: 0px;
     /*padding-left: 20px;*/
     /*background-color: #566f9e; on hover
    /* margin-top: 45vh;*/
@@ -69,5 +110,7 @@ input {
     font-family: Arial, Helvetica, sans-serif;
 
 }
+
+  
 
 
