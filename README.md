@@ -1,2 +1,2 @@
 # startpage
-Simple custom startpage for personal use.
+Simple custom startpage with Dog API integration for personal use.
