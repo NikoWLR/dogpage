@@ -51,6 +51,8 @@ $(function() {
   watchForm();
 });
 
+/* stuff happens when you press the magic dog button (Runs the watchForm function and hides/shows the firefox logo and dog image*/ 
+
 $(document).ready(function() {
     $("button").click(function() {
       $("#imagediv").toggleClass("active");
@@ -60,6 +62,7 @@ $(document).ready(function() {
     x.style.display = "block";
   } else {
     x.style.display = "none";
+    
     event.preventDefault();
     let inputValue = $('.quantity').val();
     getDogImage(inputValue);
@@ -71,7 +74,5 @@ $(document).ready(function() {
   } else {
     x.style.display = "none";
   }
-
-  
     });
   });

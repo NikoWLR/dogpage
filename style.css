@@ -38,6 +38,11 @@ button {
     background-repeat: no-repeat;
   }
 
+  a {
+    display:block;
+
+  }
+
 #center:hover {
     background-color: #566f9e;
     transition: 0.3s;
