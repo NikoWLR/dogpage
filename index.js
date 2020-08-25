@@ -39,11 +39,9 @@ function getImages(arrayOfImg){
 }
 
 function watchForm() {
-    
     event.preventDefault();
     let inputValue = $('.quantity').val();
     getDogImage(inputValue); 
-  
 }
 
 $(function() {
@@ -51,18 +49,20 @@ $(function() {
   watchForm();
 });
 
-/* stuff happens when you press the magic dog button (Runs the watchForm function and hides/shows the firefox logo and dog image*/ 
+/**   
+* Runs the watchForm function and hides/shows the firefox logo '
+* and dog image when the dog button is pressed
+*/ 
 
 $(document).ready(function() {
     $("button").click(function() {
       $("#imagediv").toggleClass("active");
-
       var x = document.getElementById("dogcontainer");
   if (x.style.display === "none") {
     x.style.display = "block";
-  } else {
+  } 
+  else {
     x.style.display = "none";
-    
     event.preventDefault();
     let inputValue = $('.quantity').val();
     getDogImage(inputValue);
