@@ -44,7 +44,8 @@ button {
 
 #center:hover {
     background-color: #566f9e;
-    transition: 0.3s;
+    transition: 0.35s;
+
 }
 
 #imagediv {
@@ -132,7 +133,7 @@ button {
 
 .github {
     background-image: url("github.png");
-    background-size: 60px;
+    background-size: 45px;
     background-repeat: no-repeat;
     background-position: center;  
 }
