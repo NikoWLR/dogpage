@@ -124,6 +124,9 @@ button {
     margin-top: 3%;
 }
 
+/*Links start here and include my pwork/school stuff. 
+Replace with your own if neccessary*/
+
 .youtube {
     background-image: url("youtube.png");
     background-size: 40px;
@@ -145,8 +148,8 @@ button {
     background-position: center;  
 }
 
-.springboard {
-    background-image: url("springboard.PNG");
+.springboard { 
+    background-image: url("springboard.PNG"); 
     background-size: 50px;
     background-repeat: no-repeat;
     background-position: center;
