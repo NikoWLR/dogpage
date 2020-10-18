@@ -51,10 +51,10 @@ $(function() {
 });
 
 /**   
-* Runs the watchForm function and hides/shows the firefox logo '
+* Runs the watchForm function and hides/shows the firefox logo
 * and dog image when the dog button is pressed
 */ 
-/*TODO change button to hover*/
+/*#TODO change button to hover*/
 $(document).ready(function() {
     $("button").click(function() {
       $("#imagediv").toggleClass("active");

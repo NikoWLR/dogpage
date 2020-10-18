@@ -29,15 +29,27 @@ img {
 button {
     display: inline-block;
     padding: 0;
-    margin: 0;
-    vertical-align: top;
+    margin-left: 48vw;
+    margin-top: 10vh;
     border:none;
-    background-color: #1f2229;
-    height: 50px;
-    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#373e4b;
+    height: 70px;
+    width: 70px;
     background-image: url("dogmode.png");
     background-repeat: no-repeat;
+    background-size: 50px 50px;
+    border-radius: 100%;
+    background-position: center; 
+    transition: 0.2s;
   }
+
+button:hover {
+    transition: 0.3s;
+    background-color: #566f9e;
+}
 
   a {
     display:block;
@@ -139,7 +151,7 @@ input:hover {
 Replace with your own if neccessary
 Images are placed in the root directory
 
-TODO 
+#TODO 
 
 Make logo for Optima*/
 

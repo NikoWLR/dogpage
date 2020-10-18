@@ -11,10 +11,6 @@
 <!--Loads the first dog picture on page load-->
 <body onload="watchForm()">
 
-  <!--Magic doggo button-->
-<button> 
-</button>
-
 <!--The Dog picture itself-->
   <div class="imagecontainer">
     <div id="dogcontainer" style="display: none">     
@@ -30,8 +26,8 @@
 
   <!--Search bar here-->
     <div class="searchcontainer">
-        <form action="https://google.com/search" method="get">
-        <input class="input_box" type="text" name="q" placeholder="Search with Google!"/>
+      <form action="https://google.com/search" method="get">
+        <input class="input_box" type="text" name="q" placeholder="Search with Google!" autocomplete="off"/>
       </form>     
 </div>
 
@@ -73,6 +69,11 @@
         </div>
       </a>
     </div>
+
+<!--Magic doggo button-->
+
+    <button> 
+    </button>
 
 <!--do not move or the doggos disappear-->
 
