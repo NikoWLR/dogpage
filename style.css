@@ -10,12 +10,13 @@ input {
     background-color: #373e4b;
     width: 520px;
     height: 60px;
-    border-radius: 10px;
+    border-radius: 50px;
     font-size: 25px;
     outline: 0;
     border: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: beige;
+    transition: 0.25s;
 }
 
 img {
@@ -45,7 +46,14 @@ button {
 #center:hover {
     background-color: #566f9e;
     transition: 0.35s;
+}
+#center {
+    transition: 0.25s;
+}
 
+input:hover {
+    background-color: #454c59;
+    transition: 0.35s;
 }
 
 #imagediv {
@@ -57,11 +65,13 @@ button {
     height: 250px;
     width: 250px;
     background-image: url("firefox.png");
+    transition: 0.6s;
 }
 
 #imagediv.active {
     background-image:none;
     background-color: green;
+    transition: 1s;
   }
 
   #dogcontainer {
@@ -73,6 +83,7 @@ button {
     height: 250px;
     width: 250px;
     border-radius: 10px;
+    transition: 0.6s;
 }
 
 #center {
@@ -124,8 +135,13 @@ button {
     margin-top: 3%;
 }
 
-/*Links start here and include my pwork/school stuff. 
-Replace with your own if neccessary*/
+/*Links start here and include my work/school stuff. 
+Replace with your own if neccessary
+Images are placed in the root directory
+
+TODO 
+
+Make logo for Optima*/
 
 .youtube {
     background-image: url("youtube.png");
