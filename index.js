@@ -20,10 +20,8 @@ function displayResults(responseJson) {
   console.log(responseJson);
   let arrayOfImg = responseJson.message;
   let display = getImages(arrayOfImg); 
-
-  //replace the existing image with the new one
   
-  $('.results-img').html(display);
+  $('.results-img').html(display); //replace the existing image with the new one
   
 }
 
