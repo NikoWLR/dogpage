@@ -27,7 +27,7 @@ function displayResults(responseJson) {
 
 /**
  * Prepares a string of <img> elements
- * and returns the same
+ * and returns "valueToReturn" - string
  */
 function getImages(arrayOfImg){
     let valueToReturn = ''; 
@@ -38,7 +38,7 @@ function getImages(arrayOfImg){
 }
 
 function watchForm() {
-    event.preventDefault();
+    ev.preventDefault();
     let inputValue = $('.quantity').val();
     getDogImage(inputValue); 
 }
@@ -55,8 +55,8 @@ $(function() {
 /*#TODO change button to hover*/
 $(document).ready(function() {
     $("button").click(function() {
-      $("#imagediv").toggleClass("active");
-      var x = document.getElementById("dogcontainer");
+        $("#imagediv").toggleClass("active");
+        var x = document.getElementById("dogcontainer");
   if (x.style.display === "none") {
     x.style.display = "block";
   } 
