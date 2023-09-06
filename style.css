@@ -80,12 +80,6 @@ input:hover {
   transition: 0.6s;
 }
 
-#imagediv.active {
-  background-image: none;
-  background-color: green;
-  transition: 1s;
-}
-
 #dogcontainer {
   display: flex;
   justify-content: baseline;
@@ -122,7 +116,6 @@ input:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: blueviolet; */
   margin-top: 70px;
   flex-wrap: nowrap;
   /*width: 70vw;*/
@@ -143,11 +136,11 @@ input:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*background-color: blue;*/
-  margin-top: 3%;
+  margin-top: 5%;
+  width: auto;
 }
 
-/*Links start here and include my work/school stuff. 
+/*Links start here and include my work/school stuff.
 Replace with your own if neccessary
 Images are placed in the images folder
 */

@@ -36,7 +36,6 @@ function getImages(arrayOfImg) {
 }
 
 function watchForm() {
-  ev.preventDefault();
   let inputValue = $(".quantity").val();
   getDogImage(inputValue);
 }
@@ -51,7 +50,8 @@ $(function () {
  * and dog image when the dog button is pressed
  */
 /*#TODO change button to hover*/
-$(document).ready(function () {
+
+$().ready(function () {
   $("button").click(function () {
     $("#imagediv").toggleClass("active");
     var x = document.getElementById("dogcontainer");
@@ -60,6 +60,7 @@ $(document).ready(function () {
     } else {
       x.style.display = "none";
       event.preventDefault();
+
       let inputValue = $(".quantity").val();
       getDogImage(inputValue);
     }
