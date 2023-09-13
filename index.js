@@ -17,6 +17,7 @@ function getDogImage(inputValue) {
  */
 function displayResults(responseJson) {
   console.log(responseJson);
+  console.log("displaying the image...")
   let arrayOfImg = responseJson.message;
   let display = getImages(arrayOfImg);
 
@@ -32,6 +33,7 @@ function getImages(arrayOfImg) {
   for (let i = 0; i < arrayOfImg.length; i++) {
     valueToReturn += `<img src="${arrayOfImg[i]}" class="results-img">`;
   }
+  console.log(valueToReturn)
   return valueToReturn;
 }
 
@@ -41,7 +43,7 @@ function watchForm() {
 }
 
 $(function () {
-  console.log("App loaded! Waiting for submit!");
+  console.log("App loaded! Waiting for submit! Wathform done");
   watchForm();
 });
 
@@ -53,13 +55,13 @@ $(function () {
 
 $().ready(function () {
   $("button").click(function () {
+    console.log("button pressed")
     $("#imagediv").toggleClass("active");
     var x = document.getElementById("dogcontainer");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
       x.style.display = "none";
-      event.preventDefault();
 
       let inputValue = $(".quantity").val();
       getDogImage(inputValue);
