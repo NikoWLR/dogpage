@@ -3,7 +3,7 @@
 /**
  * Calls the dog api to randomly get an image
  */
-function getDogImage(inputValue) {
+function getDogImage() {
   let requiredUrl = `https://dog.ceo/api/breeds/image/random/${1}`;
 
   fetch(requiredUrl)
@@ -17,7 +17,7 @@ function getDogImage(inputValue) {
  */
 function displayResults(responseJson) {
   console.log(responseJson);
-  console.log("displaying the image...")
+  console.log("displaying the image...");
   let arrayOfImg = responseJson.message;
   let display = getImages(arrayOfImg);
 
@@ -33,7 +33,7 @@ function getImages(arrayOfImg) {
   for (let i = 0; i < arrayOfImg.length; i++) {
     valueToReturn += `<img src="${arrayOfImg[i]}" class="results-img">`;
   }
-  console.log(valueToReturn)
+  console.log(valueToReturn);
   return valueToReturn;
 }
 
@@ -51,23 +51,39 @@ $(function () {
  * Runs the watchForm function and hides/shows the firefox logo
  * and dog image when the dog button is pressed
  */
-/*#TODO change button to hover*/
 
+// #TODO: change button to hover
+
+// Wait until the document is fully loaded
 $().ready(function () {
+  // Attach a click event handler to all button elements
   $("button").click(function () {
-    console.log("button pressed")
+
+    // Toggle the "active" class on the element with id "imagediv"
     $("#imagediv").toggleClass("active");
+
+    // Get the element with id "dogcontainer"
     var x = document.getElementById("dogcontainer");
+
+    // If the "dogcontainer" element is not being displayed, display it
+    // Otherwise, hide it
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
       x.style.display = "none";
 
+      // Get the value of the element with class "quantity"
       let inputValue = $(".quantity").val();
+
+      // Call the function getDogImage with inputValue as an argument
       getDogImage(inputValue);
     }
 
+    // Get the element with id "imagediv"
     var x = document.getElementById("imagediv");
+
+    // If the "imagediv" element is not being displayed, display it
+    // Otherwise, hide it
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
